@@ -1,6 +1,6 @@
 ---
 - name: Usuário
-  host: target
+  host: all
   tasks:
   - name: Criar Usuário:
     user:
