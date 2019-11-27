@@ -1,6 +1,6 @@
 ---
 - name: Firewall
-  hosts: target
+  hosts: all
   tasks:
   - name: Liberar portas 80-443
     firewalld:
