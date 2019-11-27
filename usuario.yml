@@ -1,10 +1,10 @@
 ---
-- name: Usuario
-  host: all
+- name: Usuário
+  hosts: all
   tasks:
-  - name: Criar Usuario
-    user:
-      name: Bob
-      group: redhatters
-      shell: /bin/bash
-      state: present
+    - name: criar usuário
+      user:
+        name: Bob
+        group: redhatters
+        shell: /bin/bash
+        state: present
