@@ -1,0 +1,10 @@
+---
+- name: Usuário
+  host: target
+  tasks:
+  - name: Criar Usuário:
+    user:
+      name: Bob
+      group: redhatters
+      shell: /bin/bash
+      state: present
