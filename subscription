@@ -1,0 +1,10 @@
+---
+- name: Subscrição da máquina e Update de pacotes
+  hosts: target
+  tasks:
+  - name: Subscrição
+    redhat_subscription:
+      state: present
+      username: someuser
+      password: somepass
+      auto_attach: true
