@@ -1,6 +1,6 @@
 ---
 - name: Subscrição da máquina e Update de pacotes
-  hosts: target
+  hosts: all
   tasks:
   - name: Subscrição
     redhat_subscription:
