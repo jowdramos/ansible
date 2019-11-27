@@ -1,8 +1,8 @@
 ---
-- name: Usuário
+- name: Usuario
   host: all
   tasks:
-  - name: Criar Usuário:
+  - name: Criar Usuario:
     user:
       name: Bob
       group: redhatters
