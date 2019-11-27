@@ -1,0 +1,8 @@
+---
+- name: Grupo e usuário Bob
+  hosts: target
+  tasks:
+  - name: Criar grupo redhatters
+    group:
+      name: redhatters
+      state: present
