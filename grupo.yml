@@ -1,6 +1,6 @@
 ---
 - name: Grupo e usuário Bob
-  hosts: target
+  hosts: all
   tasks:
   - name: Criar grupo redhatters
     group:
