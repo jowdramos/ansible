@@ -14,7 +14,7 @@
 
   - name: Copiar index
     copy:
-      src: index.html
+      src: /var/lib/awx/index.html
       dest: /var/www/html/index.html
 
   - name: Abrir porta httpd
