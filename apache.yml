@@ -1,6 +1,6 @@
 ---
 - name: Instalacao do servidor apache
-  hosts: target
+  hosts: all
   tasks:
   - name: Instalar httpd
     yum:
