@@ -2,7 +2,7 @@
 - name: Usuario
   host: all
   tasks:
-  - name: Criar Usuario:
+  - name: Criar Usuario
     user:
       name: Bob
       group: redhatters
