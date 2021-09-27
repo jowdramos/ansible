@@ -1,0 +1,16 @@
+---
+- name: Plalbook pra saber cores e versoes eap
+  hosts: nodes
+  become: yes
+  tasks:
+  - name: Copiar o script local para remoto
+    copy:
+      src: /root/JBoss/scanJboss1.sh
+      dest: /root/
+      mode: u+x
+  - name: script deu bom?
+    ansible.builtin.shell: /root/scanJboss1.sh
+  - name: Copiar do remote para host
+    ansible.builtin.fetch:
+     src: /root/result.txt
+     dest: /root/JBoss/resultadao
